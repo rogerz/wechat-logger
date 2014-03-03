@@ -12,7 +12,7 @@
   },
   "keywords": ["wechat wechat-handler logger"],
   "author": "Rogerz Zhang <rogerz.zhang@gmail.com>",
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rogerz/wechat-logger/issues"
   },

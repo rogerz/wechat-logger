@@ -1,9 +1,8 @@
 var expect = require('chai').expect,
-    wechatLogger = require('..');
+    logger = require('..');
 
-describe('wechat-logger', function() {
-  it('should say hello', function(done) {
-    expect(wechatLogger()).to.equal('Hello, world');
-    done();
+describe('logger()', function() {
+  it('should return a function', function() {
+    expect(logger()).to.be.a('function');
   });
 });
