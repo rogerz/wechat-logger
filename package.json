@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/rogerz/wechat-logger"
   },
-  "keywords": ["wechat wechat-handler logger"],
+  "keywords": ["wechat", "wechat-handler", "logger"],
   "author": "Rogerz Zhang <rogerz.zhang@gmail.com>",
   "license": "MIT",
   "bugs": {
