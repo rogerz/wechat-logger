@@ -16,19 +16,19 @@ exports = module.exports = function logger(options) {
   if (typeof options === 'object') {
     options = options || {};
   } else if (options) {
-    options = { format: options};
+    options = { format: options };
   } else {
     options = {};
   }
 
   var fmt = exports[options.format] || options.format || exports.default;
-  if (typeof fmt === 'function') fmt = compile(fmt);
+  if (typeof fmt === 'string') fmt = compile(fmt);
 
   var stream = options.stream || process.stdout;
 
   return function logger(req, res, next) {
-    var recv = req.weixin;
-    stream.write(recv.FromUserName + '\n');
+    var line = fmt(exports, req, res);
+    stream.write(line + '\n');
     next();
   };
 };
@@ -78,7 +78,7 @@ exports.format = function(name, str){
   return this;
 };
 
-exports.format('default', '[:date] :user -> :sp :req[MsgType]');
+exports.format('default', ':date :user -> :sp :req[MsgType]');
 
 exports.token('user', function (req) {
   return req.weixin.FromUserName;
@@ -89,7 +89,7 @@ exports.token('sp', function (req) {
 });
 
 exports.token('date', function () {
-  return Date().toUTCString();
+  return new Date().toUTCString();
 });
 
 exports.token('req', function (req, res, key) {
