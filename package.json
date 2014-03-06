@@ -1,6 +1,6 @@
 {
   "name": "wechat-logger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "logger for wechat-handler",
   "main": "index.js",
   "scripts": {
