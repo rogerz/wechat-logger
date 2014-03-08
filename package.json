@@ -1,7 +1,7 @@
 {
   "name": "wechat-logger",
   "version": "0.0.2",
-  "description": "logger for wechat-handler",
+  "description": "logger for wechat-bot",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/grunt ci"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/rogerz/wechat-logger"
   },
-  "keywords": ["wechat", "wechat-handler", "logger"],
+  "keywords": ["wechat", "wechat-bot", "logger"],
   "author": "Rogerz Zhang <rogerz.zhang@gmail.com>",
   "license": "MIT",
   "bugs": {

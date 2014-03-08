@@ -1,5 +1,5 @@
-/* logger for wechat-handler
-   framework copied from https://github.com/expressjs/morgan/
+/* logger for [wechat-bot](https://github.com/rogerz/wechat-bot)
+   framework copied from [morgan](https://github.com/expressjs/morgan)
    MIT Licensed
  */
 
